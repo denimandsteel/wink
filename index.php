@@ -2,7 +2,7 @@
   if (isset($_POST['email'])):
     $to = $_POST['email'];
     $subject = 'Browser Profile Submitted';
-    $body = print_r($_POST['profile'], true);
+    $body = $_POST['profile'];
     if (isset($_POST['email']) && isset($_POST['profile']) && mail($to, $subject, $body)) {
       $status = 'Thanks, that should help!';
     }
