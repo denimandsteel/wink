@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Wink Browser Profiler</title>
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+    <style>
+      .logo { float: left; margin-right: 30px; width: 135px; height: 135px; }
+      form { margin: 1em 0; }
+      textarea { display: none; }
+      textarea.show { display: block; margin: 1em 0; width: 400px; height: 200px; }
+      .the-rest { margin-left: 165px; }
+    </style>
 <?php
   if (isset($_POST['email'])):
     $to = $_POST['email'];
@@ -7,20 +20,9 @@
       $status = 'Thanks, that should help!';
     }
     else {
-      $status = 'Unfortunately that didn\'t work.';
+      $status = "Unfortunately that didn't work.";
     }
 ?>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Browser Profile</title>
-    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
-    <style>
-      form { margin: 1em 0; }
-      textarea { display: none; }
-      textarea.show { display: block; margin: 1em 0; width: 400px; height: 200px; }
-    </style>
   </head>
   <body>
     <div class="container">
@@ -31,14 +33,8 @@
   </body>
 </html>
 <?php else: ?>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Browser Profile</title>
-    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="modernizr.min.js"></script>
+    <script type="text/javascript" src="http://modernizr.com/downloads/modernizr-2.5.3.js"></script>
     <script>
       $(document).ready(function() {
         $('#show-work').click(function() {
@@ -77,18 +73,11 @@
         return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
       }
     </script>
-    <style>
-      .logo { float: left; margin-right: 30px; width: 135px; height: 135px; }
-      form { margin: 1em 0; }
-      textarea { display: none; }
-      textarea.show { display: block; margin: 1em 0; width: 400px; height: 200px; }
-      .the-rest { margin-left: 165px; }
-    </style>
   </head>
   <body>
     <div class="container">
       <div class="hero-unit">
-        <a href="http://denimandsteel.com"><img class="logo" src="denim.png" title="Denim &amp; Steel" /></a>
+        <a href="http://denimandsteel.com"><img class="logo" src="http://denimandsteel.com/shared/denim.png" title="Denim &amp; Steel" /></a>
         <div class="the-rest">
           <h1>Help us, help you</h1>
           <form action="" method="post">
