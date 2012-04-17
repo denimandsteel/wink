@@ -6,7 +6,7 @@ We got tired of asking people to send us their browser information, screen size,
 Please fork and make it better!
 
 ## Install
-Hide somewhere discreet in your web root, send away.
+Drop wink.php somewhere discreet in your web root, send away.
 
 ## Todo
 
