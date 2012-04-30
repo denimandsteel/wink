@@ -1,12 +1,14 @@
 # Wink
 
+<img style="float:right;" src="http://denimandsteel.com/blog/images/winkerbean.png" />
+
 ## About
 We got tired of asking people to send us their browser information, screen size, and plugins... so we made it easier for everybody. Wink grabs a snapshot of the current browser and sends it away.
 
 Please fork and make it better!
 
 ## Install
-Drop wink.php somewhere discreet in your web root, send away.
+[Download](https://github.com/denimandsteel/wink/zipball/master) and unzip, drop wink.php somewhere discreet in your web root, send away.
 
 ## Todo
 
